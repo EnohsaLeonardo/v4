@@ -133,6 +133,8 @@ public class DownloadFileDemo1 extends Activity {
                     try {
                         startActivity(pdfIntent);
                     } catch (ActivityNotFoundException e) {
+
+
                     }
                 }
             });
