@@ -125,7 +125,7 @@ public class DownloadFileDemo1 extends Activity {
         if ( pb.getProgress()==100) {
             runOnUiThread(new Runnable() {
                 public void run() {
-
+                    123456
                     File pdfFile = new File(Environment.getExternalStorageDirectory() + "maven.pdf");  // -> filename = maven.pdf
                     Uri path = Uri.fromFile(pdfFile);
                     Intent pdfIntent = new Intent(Intent.ACTION_VIEW);
