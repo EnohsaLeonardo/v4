@@ -18,21 +18,14 @@ public class Menu_Usuario_Uno extends ActionBarActivity {
         setContentView(R.layout.activity_menu__usuario__uno);
         final VideoView videoView =
                 (VideoView) findViewById(R.id.webView);
-
         videoView.setVideoPath(
                 "http://www.ebookfrenzy.com/android_book/movie.mp4");
-
         videoView.start();
-
-
         MediaController mediaController = new
                 MediaController(this);
         mediaController.setAnchorView(videoView);
         videoView.setMediaController(mediaController);
-
-
         videoView.start();
-
     }
     public void Descarga_FDA1 (View view) {
         Intent Descarga_FDA1 = new Intent(this, FDA1.class);

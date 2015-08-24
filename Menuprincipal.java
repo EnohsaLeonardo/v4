@@ -16,25 +16,16 @@ public class Menuprincipal extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menuprincipal);
-
-
         final VideoView videoView =
                 (VideoView) findViewById(R.id.webView);
-
         videoView.setVideoPath(
                 "http://www.ebookfrenzy.com/android_book/movie.mp4");
-
         videoView.start();
-        
-
         MediaController mediaController = new
                 MediaController(this);
         mediaController.setAnchorView(videoView);
         videoView.setMediaController(mediaController);
-
-
         videoView.start();
-
     }
 
 
